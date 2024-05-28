@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You Too</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+        body {
+            font-family: 'Parisienne', cursive;
+            background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #000000;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .heart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-image: url('heart.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: heartbeat 1s infinite;
+        }
+        button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>I Love You Too!</h1>
+            <p>
+                Your love has filled my heart with joy and happiness. I am so grateful to have you in my life. Every moment spent with you feels like a cherished blessing, and I am constantly in awe of the depth of our connection. Your kindness, compassion, and unwavering support have transformed my world, making even the simplest days extraordinary.
+                
+                With you by my side, I feel an unshakeable sense of peace and contentment. Your laughter is the sweetest melody, your smile the brightest light, and your presence a comforting embrace. You inspire me to be the best version of myself, and I am endlessly thankful for the love we share.
+                
+                Our journey together has been an incredible adventure, filled with unforgettable memories and dreams realized. I look forward to a future where our bond only grows stronger, and where we continue to create a lifetime of beautiful moments. You are my rock, my confidant, and my greatest love, and I am so blessed to walk this path with you.</p>
+            <div class="heart-container">
+                <div class="heart"></div>
+            </div>
+            <button class="message-btn">Message Me</button>
+        </div>
+    </div>
+
+    <script>
+        const messageBtn = document.querySelector('.message-btn');
+        messageBtn.addEventListener('click', () => {
+            window.location.href = 'https://www.instagram.com/printf__no_name/';
+        });
+    </script>
+</body>
+</html>
